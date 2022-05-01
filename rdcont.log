@@ -1,0 +1,19 @@
+---------------------------------------------------------------------------------
+
+. do "/var/folders/1q/hqfy933d4vl448qy7tdqstx80000gn/T//SD26308.000000"
+
+. rdcont zc,threshold(0) qband(5)
+(2 missing values generated)
+RDD non-randomized approximate sign test
+Running variable: zc
+Cutoff c =       0 | Left of c  Right of c            Number of obs =     976062
+-------------------+----------------------            q             =          5
+     Number of obs |    857877      118185
+Eff. number of obs |         0           5
+ Eff. neighborhood |         .       0.000
+-------------------+----------------------
+           p-value |     0.062
+
+end of do-file
+
+---------------------------------------------------------------------------------

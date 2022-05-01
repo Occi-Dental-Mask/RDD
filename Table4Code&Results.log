@@ -1,0 +1,348 @@
+---------------------------------------------------------------------------------
+
+. do "/var/folders/1q/hqfy933d4vl448qy7tdqstx80000gn/T//SD26308.000000"
+
+. *假设政策时间为2004.2的证伪检验（row1）
+. foreach h of numlist 4 8 12 16{
+  2.          rdrobust $y zc,c(-1) h(`h')
+  3. }
+
+Sharp RD estimates using local polynomial regression.
+
+     Cutoff c = -1 | Left of c  Right of c            Number of obs =     976051
+-------------------+----------------------            BW type       =     Manual
+     Number of obs |    852425      123626            Kernel        = Triangular
+Eff. Number of obs |     20905       26648            VCE method    =         NN
+    Order est. (p) |         1           1
+    Order bias (q) |         2           2
+       BW est. (h) |     4.000       4.000
+       BW bias (b) |     4.000       4.000
+         rho (h/b) |     1.000       1.000
+
+Outcome: ln_d_mpl_b. Running variable: zc.
+--------------------------------------------------------------------------------
+            Method |   Coef.    Std. Err.    z     P>|z|    [95% Conf. Interval]
+-------------------+------------------------------------------------------------
+      Conventional | -.04433     .02794   -1.5869  0.113   -.099084      .010423
+            Robust |     -          -     -1.5042  0.133   -.231816      .030496
+--------------------------------------------------------------------------------
+
+Sharp RD estimates using local polynomial regression.
+
+     Cutoff c = -1 | Left of c  Right of c            Number of obs =     976051
+-------------------+----------------------            BW type       =     Manual
+     Number of obs |    852425      123626            Kernel        = Triangular
+Eff. Number of obs |     53783       47050            VCE method    =         NN
+    Order est. (p) |         1           1
+    Order bias (q) |         2           2
+       BW est. (h) |     8.000       8.000
+       BW bias (b) |     8.000       8.000
+         rho (h/b) |     1.000       1.000
+
+Outcome: ln_d_mpl_b. Running variable: zc.
+--------------------------------------------------------------------------------
+            Method |   Coef.    Std. Err.    z     P>|z|    [95% Conf. Interval]
+-------------------+------------------------------------------------------------
+      Conventional | -.01874     .01721   -1.0892  0.276   -.052461      .014982
+            Robust |     -          -     -0.6252  0.532   -.073158      .037775
+--------------------------------------------------------------------------------
+
+Sharp RD estimates using local polynomial regression.
+
+     Cutoff c = -1 | Left of c  Right of c            Number of obs =     976051
+-------------------+----------------------            BW type       =     Manual
+     Number of obs |    852425      123626            Kernel        = Triangular
+Eff. Number of obs |     92046       64053            VCE method    =         NN
+    Order est. (p) |         1           1
+    Order bias (q) |         2           2
+       BW est. (h) |    12.000      12.000
+       BW bias (b) |    12.000      12.000
+         rho (h/b) |     1.000       1.000
+
+Outcome: ln_d_mpl_b. Running variable: zc.
+--------------------------------------------------------------------------------
+            Method |   Coef.    Std. Err.    z     P>|z|    [95% Conf. Interval]
+-------------------+------------------------------------------------------------
+      Conventional | -.01039     .01382   -0.7519  0.452   -.037471      .016692
+            Robust |     -          -     -0.9896  0.322   -.062169      .020451
+--------------------------------------------------------------------------------
+
+Sharp RD estimates using local polynomial regression.
+
+     Cutoff c = -1 | Left of c  Right of c            Number of obs =     976051
+-------------------+----------------------            BW type       =     Manual
+     Number of obs |    852425      123626            Kernel        = Triangular
+Eff. Number of obs |    123031       78777            VCE method    =         NN
+    Order est. (p) |         1           1
+    Order bias (q) |         2           2
+       BW est. (h) |    16.000      16.000
+       BW bias (b) |    16.000      16.000
+         rho (h/b) |     1.000       1.000
+
+Outcome: ln_d_mpl_b. Running variable: zc.
+--------------------------------------------------------------------------------
+            Method |   Coef.    Std. Err.    z     P>|z|    [95% Conf. Interval]
+-------------------+------------------------------------------------------------
+      Conventional |  .00311     .01201   0.2592   0.795   -.020433      .026661
+            Robust |     -          -     -1.4811  0.139   -.061526      .008561
+--------------------------------------------------------------------------------
+
+. *假设政策时间为2003.12的证伪检验（row2）
+. foreach h of numlist 4 8 12 16{
+  2.          rdrobust $y zc,c(-3) h(`h')
+  3. }
+
+Sharp RD estimates using local polynomial regression.
+
+     Cutoff c = -3 | Left of c  Right of c            Number of obs =     976051
+-------------------+----------------------            BW type       =     Manual
+     Number of obs |    838126      137925            Kernel        = Triangular
+Eff. Number of obs |     22154       27775            VCE method    =         NN
+    Order est. (p) |         1           1
+    Order bias (q) |         2           2
+       BW est. (h) |     4.000       4.000
+       BW bias (b) |     4.000       4.000
+         rho (h/b) |     1.000       1.000
+
+Outcome: ln_d_mpl_b. Running variable: zc.
+--------------------------------------------------------------------------------
+            Method |   Coef.    Std. Err.    z     P>|z|    [95% Conf. Interval]
+-------------------+------------------------------------------------------------
+      Conventional |   .0066     .02719   0.2426   0.808   -.046692      .059884
+            Robust |     -          -     2.0186   0.044    .004011      .272373
+--------------------------------------------------------------------------------
+
+Sharp RD estimates using local polynomial regression.
+
+     Cutoff c = -3 | Left of c  Right of c            Number of obs =     976051
+-------------------+----------------------            BW type       =     Manual
+     Number of obs |    838126      137925            Kernel        = Triangular
+Eff. Number of obs |     57900       51613            VCE method    =         NN
+    Order est. (p) |         1           1
+    Order bias (q) |         2           2
+       BW est. (h) |     8.000       8.000
+       BW bias (b) |     8.000       8.000
+         rho (h/b) |     1.000       1.000
+
+Outcome: ln_d_mpl_b. Running variable: zc.
+--------------------------------------------------------------------------------
+            Method |   Coef.    Std. Err.    z     P>|z|    [95% Conf. Interval]
+-------------------+------------------------------------------------------------
+      Conventional | -.00767     .01702   -0.4506  0.652   -.041039      .025697
+            Robust |     -          -     -0.5008  0.617   -.068533       .04064
+--------------------------------------------------------------------------------
+
+Sharp RD estimates using local polynomial regression.
+
+     Cutoff c = -3 | Left of c  Right of c            Number of obs =     976051
+-------------------+----------------------            BW type       =     Manual
+     Number of obs |    838126      137925            Kernel        = Triangular
+Eff. Number of obs |     91882       69394            VCE method    =         NN
+    Order est. (p) |         1           1
+    Order bias (q) |         2           2
+       BW est. (h) |    12.000      12.000
+       BW bias (b) |    12.000      12.000
+         rho (h/b) |     1.000       1.000
+
+Outcome: ln_d_mpl_b. Running variable: zc.
+--------------------------------------------------------------------------------
+            Method |   Coef.    Std. Err.    z     P>|z|    [95% Conf. Interval]
+-------------------+------------------------------------------------------------
+      Conventional |  2.5e-05    .01366   0.0018   0.999   -.026751      .026801
+            Robust |     -          -     -0.9005  0.368   -.060112      .022266
+--------------------------------------------------------------------------------
+
+Sharp RD estimates using local polynomial regression.
+
+     Cutoff c = -3 | Left of c  Right of c            Number of obs =     976051
+-------------------+----------------------            BW type       =     Manual
+     Number of obs |    838126      137925            Kernel        = Triangular
+Eff. Number of obs |    126445       85416            VCE method    =         NN
+    Order est. (p) |         1           1
+    Order bias (q) |         2           2
+       BW est. (h) |    16.000      16.000
+       BW bias (b) |    16.000      16.000
+         rho (h/b) |     1.000       1.000
+
+Outcome: ln_d_mpl_b. Running variable: zc.
+--------------------------------------------------------------------------------
+            Method |   Coef.    Std. Err.    z     P>|z|    [95% Conf. Interval]
+-------------------+------------------------------------------------------------
+      Conventional |  .01136     .01168   0.9728   0.331   -.011532       .03426
+            Robust |     -          -     -0.7685  0.442   -.048191      .021044
+--------------------------------------------------------------------------------
+
+. *假设政策时间为2003.9的证伪检验（row3）
+. foreach h of numlist 4 8 12 16{
+  2.          rdrobust $y zc,c(-6) h(`h')
+  3. }
+
+Sharp RD estimates using local polynomial regression.
+
+     Cutoff c = -6 | Left of c  Right of c            Number of obs =     976051
+-------------------+----------------------            BW type       =     Manual
+     Number of obs |    815972      160079            Kernel        = Triangular
+Eff. Number of obs |     26802       29494            VCE method    =         NN
+    Order est. (p) |         1           1
+    Order bias (q) |         2           2
+       BW est. (h) |     4.000       4.000
+       BW bias (b) |     4.000       4.000
+         rho (h/b) |     1.000       1.000
+
+Outcome: ln_d_mpl_b. Running variable: zc.
+--------------------------------------------------------------------------------
+            Method |   Coef.    Std. Err.    z     P>|z|    [95% Conf. Interval]
+-------------------+------------------------------------------------------------
+      Conventional |  .04441     .02476   1.7932   0.073   -.004129       .09294
+            Robust |     -          -     0.5226   0.601   -.087149      .150519
+--------------------------------------------------------------------------------
+
+Sharp RD estimates using local polynomial regression.
+
+     Cutoff c = -6 | Left of c  Right of c            Number of obs =     976051
+-------------------+----------------------            BW type       =     Manual
+     Number of obs |    815972      160079            Kernel        = Triangular
+Eff. Number of obs |     60426       57378            VCE method    =         NN
+    Order est. (p) |         1           1
+    Order bias (q) |         2           2
+       BW est. (h) |     8.000       8.000
+       BW bias (b) |     8.000       8.000
+         rho (h/b) |     1.000       1.000
+
+Outcome: ln_d_mpl_b. Running variable: zc.
+--------------------------------------------------------------------------------
+            Method |   Coef.    Std. Err.    z     P>|z|    [95% Conf. Interval]
+-------------------+------------------------------------------------------------
+      Conventional |  .02625     .01592   1.6483   0.099   -.004964       .05746
+            Robust |     -          -     1.5529   0.120   -.010624      .091693
+--------------------------------------------------------------------------------
+
+Sharp RD estimates using local polynomial regression.
+
+     Cutoff c = -6 | Left of c  Right of c            Number of obs =     976051
+-------------------+----------------------            BW type       =     Manual
+     Number of obs |    815972      160079            Kernel        = Triangular
+Eff. Number of obs |     94857       78878            VCE method    =         NN
+    Order est. (p) |         1           1
+    Order bias (q) |         2           2
+       BW est. (h) |    12.000      12.000
+       BW bias (b) |    12.000      12.000
+         rho (h/b) |     1.000       1.000
+
+Outcome: ln_d_mpl_b. Running variable: zc.
+--------------------------------------------------------------------------------
+            Method |   Coef.    Std. Err.    z     P>|z|    [95% Conf. Interval]
+-------------------+------------------------------------------------------------
+      Conventional |  .03011     .01279   2.3549   0.019    .005049      .055168
+            Robust |     -          -     1.5269   0.127   -.008418      .067773
+--------------------------------------------------------------------------------
+
+Sharp RD estimates using local polynomial regression.
+
+     Cutoff c = -6 | Left of c  Right of c            Number of obs =     976051
+-------------------+----------------------            BW type       =     Manual
+     Number of obs |    815972      160079            Kernel        = Triangular
+Eff. Number of obs |    134319       95165            VCE method    =         NN
+    Order est. (p) |         1           1
+    Order bias (q) |         2           2
+       BW est. (h) |    16.000      16.000
+       BW bias (b) |    16.000      16.000
+         rho (h/b) |     1.000       1.000
+
+Outcome: ln_d_mpl_b. Running variable: zc.
+--------------------------------------------------------------------------------
+            Method |   Coef.    Std. Err.    z     P>|z|    [95% Conf. Interval]
+-------------------+------------------------------------------------------------
+      Conventional |  .02645     .01105   2.3929   0.017    .004786      .048119
+            Robust |     -          -     1.9885   0.047    .000468      .064747
+--------------------------------------------------------------------------------
+
+. *假设政策时间为2003.6的证伪检验（row4）
+. foreach h of numlist 4 8 12 16{
+  2.          rdrobust $y zc,c(-9) h(`h')
+  3. }
+
+Sharp RD estimates using local polynomial regression.
+
+     Cutoff c = -9 | Left of c  Right of c            Number of obs =     976051
+-------------------+----------------------            BW type       =     Manual
+     Number of obs |    789170      186881            Kernel        = Triangular
+Eff. Number of obs |     28791       35130            VCE method    =         NN
+    Order est. (p) |         1           1
+    Order bias (q) |         2           2
+       BW est. (h) |     4.000       4.000
+       BW bias (b) |     4.000       4.000
+         rho (h/b) |     1.000       1.000
+
+Outcome: ln_d_mpl_b. Running variable: zc.
+--------------------------------------------------------------------------------
+            Method |   Coef.    Std. Err.    z     P>|z|    [95% Conf. Interval]
+-------------------+------------------------------------------------------------
+      Conventional | -.01021     .02338   -0.4366  0.662   -.056037      .035621
+            Robust |     -          -     1.0839   0.278   -.050251        .1746
+--------------------------------------------------------------------------------
+
+Sharp RD estimates using local polynomial regression.
+
+     Cutoff c = -9 | Left of c  Right of c            Number of obs =     976051
+-------------------+----------------------            BW type       =     Manual
+     Number of obs |    789170      186881            Kernel        = Triangular
+Eff. Number of obs |     59776       63255            VCE method    =         NN
+    Order est. (p) |         1           1
+    Order bias (q) |         2           2
+       BW est. (h) |     8.000       8.000
+       BW bias (b) |     8.000       8.000
+         rho (h/b) |     1.000       1.000
+
+Outcome: ln_d_mpl_b. Running variable: zc.
+--------------------------------------------------------------------------------
+            Method |   Coef.    Std. Err.    z     P>|z|    [95% Conf. Interval]
+-------------------+------------------------------------------------------------
+      Conventional |  .01322     .01491   0.8862   0.375   -.016013      .042447
+            Robust |     -          -     0.2602   0.795   -.042333      .055294
+--------------------------------------------------------------------------------
+
+Sharp RD estimates using local polynomial regression.
+
+     Cutoff c = -9 | Left of c  Right of c            Number of obs =     976051
+-------------------+----------------------            BW type       =     Manual
+     Number of obs |    789170      186881            Kernel        = Triangular
+Eff. Number of obs |     96916       89903            VCE method    =         NN
+    Order est. (p) |         1           1
+    Order bias (q) |         2           2
+       BW est. (h) |    12.000      12.000
+       BW bias (b) |    12.000      12.000
+         rho (h/b) |     1.000       1.000
+
+Outcome: ln_d_mpl_b. Running variable: zc.
+--------------------------------------------------------------------------------
+            Method |   Coef.    Std. Err.    z     P>|z|    [95% Conf. Interval]
+-------------------+------------------------------------------------------------
+      Conventional |  .00575     .01207   0.4760   0.634   -.017916      .029408
+            Robust |     -          -     0.8444   0.398   -.020414       .05132
+--------------------------------------------------------------------------------
+
+Sharp RD estimates using local polynomial regression.
+
+     Cutoff c = -9 | Left of c  Right of c            Number of obs =     976051
+-------------------+----------------------            BW type       =     Manual
+     Number of obs |    789170      186881            Kernel        = Triangular
+Eff. Number of obs |    134581      110305            VCE method    =         NN
+    Order est. (p) |         1           1
+    Order bias (q) |         2           2
+       BW est. (h) |    16.000      16.000
+       BW bias (b) |    16.000      16.000
+         rho (h/b) |     1.000       1.000
+
+Outcome: ln_d_mpl_b. Running variable: zc.
+--------------------------------------------------------------------------------
+            Method |   Coef.    Std. Err.    z     P>|z|    [95% Conf. Interval]
+-------------------+------------------------------------------------------------
+      Conventional |  .00164     .01057   0.1548   0.877   -.019088      .022363
+            Robust |     -          -     0.8203   0.412   -.017676      .043121
+--------------------------------------------------------------------------------
+
+. 
+end of do-file
+
+---------------------------------------------------------------------------------

@@ -1,0 +1,174 @@
+---------------------------------------------------------------------------------
+
+. do "/var/folders/1q/hqfy933d4vl448qy7tdqstx80000gn/T//SD26308.000000"
+
+. use "Firm_Endb_2004_2007_clean.dta",clear
+
+. foreach h of numlist 10 15 30 45{
+  2.          rdrobust $y zc if soes==1,h(`h')  //国有企业
+  3.          rdrobust $y zc if soes==0,h(`h')  //非国有企业
+  4. }
+
+Sharp RD estimates using local polynomial regression.
+
+      Cutoff c = 0 | Left of c  Right of c            Number of obs =      61477
+-------------------+----------------------            BW type       =     Manual
+     Number of obs |     58287        3190            Kernel        = Triangular
+Eff. Number of obs |      1875        1520            VCE method    =         NN
+    Order est. (p) |         1           1
+    Order bias (q) |         2           2
+       BW est. (h) |    10.000      10.000
+       BW bias (b) |    10.000      10.000
+         rho (h/b) |     1.000       1.000
+
+Outcome: ln_d_mpl_b. Running variable: zc.
+--------------------------------------------------------------------------------
+            Method |   Coef.    Std. Err.    z     P>|z|    [95% Conf. Interval]
+-------------------+------------------------------------------------------------
+      Conventional |  -.1011     .08669   -1.1663  0.244   -.271015      .068805
+            Robust |     -          -     -2.6820  0.007   -.700636     -.108977
+--------------------------------------------------------------------------------
+
+Sharp RD estimates using local polynomial regression.
+
+      Cutoff c = 0 | Left of c  Right of c            Number of obs =     914574
+-------------------+----------------------            BW type       =     Manual
+     Number of obs |    799581      114993            Kernel        = Triangular
+Eff. Number of obs |     66823       51749            VCE method    =         NN
+    Order est. (p) |         1           1
+    Order bias (q) |         2           2
+       BW est. (h) |    10.000      10.000
+       BW bias (b) |    10.000      10.000
+         rho (h/b) |     1.000       1.000
+
+Outcome: ln_d_mpl_b. Running variable: zc.
+--------------------------------------------------------------------------------
+            Method |   Coef.    Std. Err.    z     P>|z|    [95% Conf. Interval]
+-------------------+------------------------------------------------------------
+      Conventional |   -.003      .0157   -0.1910  0.849   -.033761      .027765
+            Robust |     -          -     0.2613   0.794   -.042579      .055681
+--------------------------------------------------------------------------------
+
+Sharp RD estimates using local polynomial regression.
+
+      Cutoff c = 0 | Left of c  Right of c            Number of obs =      61477
+-------------------+----------------------            BW type       =     Manual
+     Number of obs |     58287        3190            Kernel        = Triangular
+Eff. Number of obs |      3007        2014            VCE method    =         NN
+    Order est. (p) |         1           1
+    Order bias (q) |         2           2
+       BW est. (h) |    15.000      15.000
+       BW bias (b) |    15.000      15.000
+         rho (h/b) |     1.000       1.000
+
+Outcome: ln_d_mpl_b. Running variable: zc.
+--------------------------------------------------------------------------------
+            Method |   Coef.    Std. Err.    z     P>|z|    [95% Conf. Interval]
+-------------------+------------------------------------------------------------
+      Conventional | -.02754     .06973   -0.3950  0.693   -.164211      .109128
+            Robust |     -          -     -1.4960  0.135   -.376003      .050482
+--------------------------------------------------------------------------------
+
+Sharp RD estimates using local polynomial regression.
+
+      Cutoff c = 0 | Left of c  Right of c            Number of obs =     914574
+-------------------+----------------------            BW type       =     Manual
+     Number of obs |    799581      114993            Kernel        = Triangular
+Eff. Number of obs |    108617       71320            VCE method    =         NN
+    Order est. (p) |         1           1
+    Order bias (q) |         2           2
+       BW est. (h) |    15.000      15.000
+       BW bias (b) |    15.000      15.000
+         rho (h/b) |     1.000       1.000
+
+Outcome: ln_d_mpl_b. Running variable: zc.
+--------------------------------------------------------------------------------
+            Method |   Coef.    Std. Err.    z     P>|z|    [95% Conf. Interval]
+-------------------+------------------------------------------------------------
+      Conventional |  .00312     .01276   0.2447   0.807    -.02188      .028123
+            Robust |     -          -     -0.4442  0.657    -.04611      .029071
+--------------------------------------------------------------------------------
+
+Sharp RD estimates using local polynomial regression.
+
+      Cutoff c = 0 | Left of c  Right of c            Number of obs =      61477
+-------------------+----------------------            BW type       =     Manual
+     Number of obs |     58287        3190            Kernel        = Triangular
+Eff. Number of obs |      6631        2951            VCE method    =         NN
+    Order est. (p) |         1           1
+    Order bias (q) |         2           2
+       BW est. (h) |    30.000      30.000
+       BW bias (b) |    30.000      30.000
+         rho (h/b) |     1.000       1.000
+
+Outcome: ln_d_mpl_b. Running variable: zc.
+--------------------------------------------------------------------------------
+            Method |   Coef.    Std. Err.    z     P>|z|    [95% Conf. Interval]
+-------------------+------------------------------------------------------------
+      Conventional | -.04717     .04939   -0.9550  0.340   -.143973      .049634
+            Robust |     -          -     -0.6722  0.501   -.191217      .093549
+--------------------------------------------------------------------------------
+
+Sharp RD estimates using local polynomial regression.
+
+      Cutoff c = 0 | Left of c  Right of c            Number of obs =     914574
+-------------------+----------------------            BW type       =     Manual
+     Number of obs |    799581      114993            Kernel        = Triangular
+Eff. Number of obs |    233950      106290            VCE method    =         NN
+    Order est. (p) |         1           1
+    Order bias (q) |         2           2
+       BW est. (h) |    30.000      30.000
+       BW bias (b) |    30.000      30.000
+         rho (h/b) |     1.000       1.000
+
+Outcome: ln_d_mpl_b. Running variable: zc.
+--------------------------------------------------------------------------------
+            Method |   Coef.    Std. Err.    z     P>|z|    [95% Conf. Interval]
+-------------------+------------------------------------------------------------
+      Conventional |  .03466     .00924   3.7524   0.000    .016559      .052771
+            Robust |     -          -     -0.2317  0.817   -.029163      .022996
+--------------------------------------------------------------------------------
+
+Sharp RD estimates using local polynomial regression.
+
+      Cutoff c = 0 | Left of c  Right of c            Number of obs =      61477
+-------------------+----------------------            BW type       =     Manual
+     Number of obs |     58287        3190            Kernel        = Triangular
+Eff. Number of obs |     10387        3187            VCE method    =         NN
+    Order est. (p) |         1           1
+    Order bias (q) |         2           2
+       BW est. (h) |    45.000      45.000
+       BW bias (b) |    45.000      45.000
+         rho (h/b) |     1.000       1.000
+
+Outcome: ln_d_mpl_b. Running variable: zc.
+--------------------------------------------------------------------------------
+            Method |   Coef.    Std. Err.    z     P>|z|    [95% Conf. Interval]
+-------------------+------------------------------------------------------------
+      Conventional | -.03263     .04258   -0.7662  0.444   -.116085       .05083
+            Robust |     -          -     -1.1208  0.262   -.185255       .05046
+--------------------------------------------------------------------------------
+
+Sharp RD estimates using local polynomial regression.
+
+      Cutoff c = 0 | Left of c  Right of c            Number of obs =     914574
+-------------------+----------------------            BW type       =     Manual
+     Number of obs |    799581      114993            Kernel        = Triangular
+Eff. Number of obs |    343809      114640            VCE method    =         NN
+    Order est. (p) |         1           1
+    Order bias (q) |         2           2
+       BW est. (h) |    45.000      45.000
+       BW bias (b) |    45.000      45.000
+         rho (h/b) |     1.000       1.000
+
+Outcome: ln_d_mpl_b. Running variable: zc.
+--------------------------------------------------------------------------------
+            Method |   Coef.    Std. Err.    z     P>|z|    [95% Conf. Interval]
+-------------------+------------------------------------------------------------
+      Conventional |  .05324     .00797   6.6793   0.000    .037617      .068861
+            Robust |     -          -     1.4110   0.158    -.00613      .037642
+--------------------------------------------------------------------------------
+
+. 
+end of do-file
+
